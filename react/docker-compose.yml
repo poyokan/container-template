@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  node:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: react-template
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "3000:3000"
